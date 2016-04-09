@@ -1,14 +1,17 @@
 require 'test_helper'
 
 class LedControllerTest < ActionController::TestCase
-  test "should get on" do
+
+  test "LED should been on" do
     get :on
-    assert_response :success
+    assert_response(:success)
+    assert_equal(JSON.parse(response.body)['led'], 'on')
   end
 
-  test "should get off" do
+  test "LED should been off" do
     get :off
-    assert_response :success
+    assert_response(:success)
+    assert_equal(JSON.parse(response.body)['led'], 'off')
   end
 
 end
