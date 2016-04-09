@@ -45,3 +45,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'pi_piper' #E vent driven Raspberry Pi GPIO programming in Ruby
