@@ -1,0 +1,1 @@
+LED = PiPiper::Pin.new(:pin => 17, :direction => :out)
