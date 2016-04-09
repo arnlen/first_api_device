@@ -25,19 +25,11 @@ rbenv sudo rails s -p 80 -b 0.0.0.0
 Switch on LED:
 
 ```bash
-http://localhost:3000/led/on
-
-# or
-
 http://<raspberry_ip>/led/on
 ```
 
 Switch off LED:
 
 ```bash
-http://localhost:3000/led/off
-
-# or
-
 http://<raspberry_ip>/led/off
 ```
